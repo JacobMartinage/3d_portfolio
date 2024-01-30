@@ -5,10 +5,10 @@ import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 import CanvasLoader from '../Loader';
 
 const Tracks = () => {
-    const track = useGLTF('src/assets/oneCarandTrack.glb')
+    const track = useGLTF('src/assets/oneCarandTrack5.glb')
     return (
-      <mesh>
-        <hemisphereLight intensity={3}
+      <mesh rotation={[Math.PI / 12, 0, 0]}>
+        <hemisphereLight intensity={4.5}
         groundColor="black"/>
         <pointLight
         position={[-1,1,1]} 
@@ -23,21 +23,20 @@ const Tracks = () => {
         />
         <primitive
           object={track.scene}
-          position= {[15,-2,4]}
-          angle= {.25}
+          position= {[0.6,-.6,0]}
           
           />
       </mesh>
+      
     )
   }
   
   const TrackCanvas = () => {
     return (
       <Canvas
-        frameLoop = "demand"
+        frameLoop = "on demand"
         shadows
-        camera= {{ position: [20,3, 5], fov: 15, angle: 2 }}
-        gl = {{ preserveDrawingBufferf: true}}
+        camera= {{position: [15,-40, 10], fov: 5, rotateX: -Math.PI/8, rotateY: Math.PI/2.25 }}
       >
         <Suspense fallback={ <CanvasLoader/>}>
           
@@ -47,6 +46,8 @@ const Tracks = () => {
             enableZoom={false}
             maxPolarAngle={Math.PI/2}
             minPolarAngle={Math.PI/2}
+            minAzimuthAngle={-Math.PI/3}
+            maxAzimuthAngle={Math.PI/2}
           />
         <Preload all />
       </Canvas>

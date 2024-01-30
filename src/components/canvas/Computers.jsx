@@ -8,7 +8,7 @@ import CanvasLoader from '../Loader';
 const Computers = () => {
   const computer = useGLTF('src/assets/heroModel.glb')
   return (
-    <mesh>
+    <mesh rotation={[0, -Math.PI/1.5, 0]}>
       <hemisphereLight intensity={1.8}
       groundColor="black"/>
       <pointLight
