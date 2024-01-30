@@ -9,7 +9,7 @@ const Computers = () => {
   const computer = useGLTF('src/assets/heroModel.glb')
   return (
     <mesh>
-      <hemisphereLight intensity={1.5}
+      <hemisphereLight intensity={1.8}
       groundColor="black"/>
       <pointLight
       position={[-1,1,1]} 
