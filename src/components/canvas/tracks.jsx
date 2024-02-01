@@ -23,7 +23,7 @@ const Tracks = () => {
         />
         <primitive
           object={track.scene}
-          position= {[0.6,-.6,0]}
+          position= {[0.6,0,0]}
           
           />
       </mesh>
@@ -36,7 +36,7 @@ const Tracks = () => {
       <Canvas
         frameLoop = "on demand"
         shadows
-        camera= {{position: [15,-40, 10], fov: 5, rotateX: -Math.PI/8, rotateY: Math.PI/2.25 }}
+        camera= {{position: [1,1, -3], fov: 3, rotateX: -Math.PI/8, rotateY: Math.PI/2.25 }}
       >
         <Suspense fallback={ <CanvasLoader/>}>
           
