@@ -14,8 +14,8 @@ const Ball = ({imgUrl, name, onBallClick}) => {
 
   return (
     <Float speed = {1.75} rotationIntensity={1} floatIntensity={2} onClick={() => onBallClick(name)}>
-      <ambientLight intensity={0.25} />
-      <directionalLight position={[0, 0, 0.05]} />
+      <ambientLight intensity={0.15} />
+      <directionalLight position={[0, 0, 0.05]} intensity={0.5} />
       <mesh castShadow receiveShadow scale={2.5}>
         <icosahedronGeometry args={[1, 1]} />
         <meshNormalMaterial 
