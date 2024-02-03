@@ -18,14 +18,16 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-             Hi, I'm <span className = "text-[#915eff]">Jacob</span></h1>
+             Hi, I'm <span className = "blue-to-purple-gradient">Jacob</span></h1>
           <p className= {`${styles.heroSubText} mt2 text-white-100`}>
             Idk put some shit about me here
           </p>
         </div>
 
       </div>
-      <ComputersCanvas />
+      <ComputersCanvas/>
+      
+      
 
       <div className = "absolute xs:bottom-20 rounded-3 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
@@ -50,7 +52,7 @@ const Hero = () => {
 
 
       {/*<TrackCanvas/>*/}
-    
+      
       
       
        
