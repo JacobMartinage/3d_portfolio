@@ -1,15 +1,24 @@
 import { BallCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { technologies } from '../constants';
-
-
+import { motion } from 'framer-motion';
+import { fadeIn, textVariant } from '../utils/motion';
 
 
 const Tech = () => {
   return (
     <div>
+      
     <h2 className='flex justify-center text-[30px] font-semibold'><span className='blue-to-pink-gradient'>Technologies I use</span></h2>
-    
+    <div className='w-full flex justify-center'>
+          <motion.p
+            variants = {fadeIn("", "", 0.1, 1)}
+            className='mt-4 text-secondary text-[17px] flex justify-center'
+            >
+            Below are the technologies I use or have used in my coursework and personal projects.
+          </motion.p>
+
+    </div>
     <div className='flex flex-row flex-wrap justify-center gap-10'>
       
       {technologies.map((technology) => (
