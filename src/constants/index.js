@@ -1,25 +1,23 @@
 import {
     mobile,
     backend,
-    creator,
     web,
     javascript,
-    typescript,
     html,
     css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
-    mongodb,
     git,
     figma,
-    docker,
     question,
     carrent,
     jobit,
     tripguide,
     threejs,
+    swift,
+    java,
+    python,
   } from "../assets";
   
   export const navLinks = [
@@ -50,10 +48,7 @@ import {
       title: "Backend Developer",
       icon: backend,
     },
-    {
-      title: "Content Creator",
-      icon: creator,
-    },
+    
   ];
   
   const technologies = [
@@ -68,19 +63,12 @@ import {
     {
       name: "JavaScript",
       icon: javascript,
-    },
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
+    }, 
     {
       name: "React JS",
       icon: reactjs,
     },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
+    
     {
       name: "Tailwind CSS",
       icon: tailwind,
@@ -90,8 +78,16 @@ import {
       icon: nodejs,
     },
     {
-      name: "MongoDB",
-      icon: mongodb,
+      name: "Python",
+      icon: python,
+    },
+    {
+      name: "Java",
+      icon: java,
+    },
+    {
+      name: "Swift",
+      icon: swift,
     },
     {
       name: "Three JS",
@@ -104,10 +100,6 @@ import {
     {
       name: "figma",
       icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
     },
   ];
   
