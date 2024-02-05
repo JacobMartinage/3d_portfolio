@@ -117,10 +117,10 @@ import {
       company_name: "Anywhere, looking for Web Dev/SWE roles",
       icon: question,
       iconBg: "#383E56",
-      date: "Fall 2023-Present",
+      date: "Summer 2024",
       points: [
         "As a Freshman in CS, I have little to no previous professional experience, but I am hoping to begin my professional CS career with an internship this summer",
-        "I have been searching for and applying to numerous internships in the hopes of gaining valuable experience and knowledge in the field of software development",
+        "I have been searching for and applying to numerous internships in the hopes of gaining valuable experience and knowledge",
         "In the hopes of getting a head start on my career, I have been working on  projects and learning new technologies and languages while working on coursework and applying for intern positions",
         "To any hiring managers reading this, I am a hardworking and dedicated individual who is eager to learn and contribute to any team, and you will not regret bringing me on board!",
         "Hopefully, this space will get filled with a company soon!",        

@@ -1,24 +1,24 @@
-import React, { Suspense, useState } from 'react';
+import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { 
-  Decal, Float, Icosahedron, OrbitControls, Preload, useTexture,  
+  Decal, Float, OrbitControls, Preload, useTexture,  
   } from '@react-three/drei';
 
 import CanvasLoader from '../Loader';
 
 
-const Ball = ({imgUrl, name, onBallClick}) => {
-  const[decal] = useTexture([imgUrl]);
+const Ball = (props) => {
+  const[decal] = useTexture([props.imgUrl]);
 
 
 
   return (
-    <Float speed = {1.75} rotationIntensity={1} floatIntensity={2} onClick={() => onBallClick(name)}>
-      <ambientLight intensity={0.15} />
-      <directionalLight position={[0, 0, 0.05]} intensity={0.5} />
+    <Float speed = {1.21 } rotationIntensity={1} floatIntensity={2}>
+      <ambientLight intensity={0.25} />
+      <directionalLight position={[0, 0, 0.05]} />
       <mesh castShadow receiveShadow scale={2.5}>
         <icosahedronGeometry args={[1, 1]} />
-        <meshNormalMaterial 
+        <meshNormalMaterial
           color="#fff8eb" 
           polygonOffset
           polygonOffsetFactor={-5}
@@ -37,24 +37,19 @@ const Ball = ({imgUrl, name, onBallClick}) => {
   )
 }
 
-const BallCanvas = ({ icon, name }) => {
-  const [selectedBall, setSelectedBall] = useState(null);
-
-  const handleBallClick = (name) => {
-    setSelectedBall(name);
-  };
-
+const BallCanvas = ({ icon }) => {
   return (
     
       <Canvas
-        frameloop="demand"
-        gl={{ preserveDrawingBufferf: true }}
+        frameloop="always"
+        gl={{ preserveDrawingBuffer: true }}
       >
         <Suspense fallback={<CanvasLoader />}>
           <OrbitControls enableZoom={false} />
-          <Ball imgUrl={icon} name={name} onBallClick={handleBallClick} />
+          <Ball imgUrl={icon} />
         </Suspense>
 
+      <Preload all />
       </Canvas>
   );
   }
