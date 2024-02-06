@@ -121,32 +121,7 @@ import {
     
   ];
   
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-  ];
+
   
   const projects = [
     {
@@ -174,7 +149,7 @@ import {
       {
       name: "Envo",
       description:
-        "Web application that used a ML model to predict the carbon footprint of current, future, and hypothetical cars based on several parameters. Placed third in the Environmental Machine Learning category at VTHacksX",
+        "Envo is a chatbot/web app I helped to develop at VTHacksX that used a ML model to predict the carbon footprint of current, future, and hypothetical cars based on various parameters, and would return its confidence in this answer. Placed third in the Environmental Machine Learning category at VTHacksX!",
       tags: [
         {
           name: "python",
@@ -221,4 +196,4 @@ import {
     
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, projects };
