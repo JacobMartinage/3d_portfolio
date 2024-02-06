@@ -153,7 +153,7 @@ import {
     {
         name: "My Personal Portfolio",
         description:
-          "My personal portfolio website, built primarily with React and Tailwind CSS. It is a responsive, single-page application that showcases my skills, projects, and experiences.I also utilized Three.js to incorporate 3D models throughout the website, and I'm really proud of the final product!",
+          "My personal portfolio website, built primarily with React and Tailwind CSS. It is a responsive, single-page application that showcases my skills, projects, and experiences.I also utilized Three.js to incorporate custom 3D models that I made throughout the website, making it feel almost alive. I'm really proud of the final product!",
         tags: [
           {
             name: "React",
@@ -170,7 +170,7 @@ import {
         ],
       
         image: tripguide,
-        source_code_link: "https://github.com/",
+        source_code_link: "https://github.com/JacobMartinage/3d_portfolio",
       },
       {
       name: "Envo",
