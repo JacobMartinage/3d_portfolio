@@ -11,13 +11,13 @@ import {
     git,
     figma,
     question,
-    carrent,
-    jobit,
-    tripguide,
     threejs,
     swift,
     java,
     python,
+    YTSummarizer,
+    envoLogo2,
+    Portfolio
   } from "../assets";
   
   export const navLinks = [
@@ -150,68 +150,75 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+        name: "My Personal Portfolio",
+        description:
+          "My personal portfolio website, built primarily with React and Tailwind CSS. It is a responsive, single-page application that showcases my skills, projects, and experiences.I also utilized Three.js to incorporate custom 3D models that I made throughout the website, making it feel almost alive. I'm really proud of the final product!",
+        tags: [
+          {
+            name: "React",
+            color: "blue-text-gradient",
+          },
+          {
+            name: "TailwindCSS",
+            color: "green-text-gradient",
+          },
+          {
+            name: "Three.js",
+            color: "pink-text-gradient",
+          },
+        ],
+      
+        image: Portfolio,
+        source_code_link: "https://github.com/JacobMartinage/3d_portfolio",
+      },
+      {
+      name: "Envo",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web application that used a ML model to predict the carbon footprint of current, future, and hypothetical cars based on several parameters. Placed third in the Environmental Machine Learning category at VTHacksX",
       tags: [
         {
-          name: "react",
+          name: "python",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "Machine Learning",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "Twilio",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: envoLogo2,
+      source_code_link: "https://github.com/ramankc6/VTHacks2022",
     },
     {
-      name: "Job IT",
+      name: "YTSummarizer",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Web app connected to ChatGPT's Davinci model that summarized YouTube videos through use of API call to get the video transcript and then summarizing it with Davinci",
       tags: [
         {
-          name: "react",
-          color: "blue-text-gradient",
+          name: "Javascript",
+          color: "blue-to-pink-gradient",
         },
         {
-          name: "restapi",
+          name: "Python",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "HTML",
           color: "pink-text-gradient",
         },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
         {
-          name: "nextjs",
+          name: "CSS",
           color: "blue-text-gradient",
         },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
+        
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: YTSummarizer,
+      source_code_link: "https://github.com/JacobMartinage/VTHacks11",
     },
+    
   ];
   
   export { services, technologies, experiences, testimonials, projects };
