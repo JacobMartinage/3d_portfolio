@@ -150,24 +150,24 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Envo",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web application that used a ML model to predict the carbon footprint of current, future, and hypothetical cars based on several parameters. Placed third in the Environmental Machine Learning category at VTHacksX",
       tags: [
         {
-          name: "react",
+          name: "python",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "Machine Learning",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "Twilio",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      image: envoLogo2,
       source_code_link: "https://github.com/",
     },
     {

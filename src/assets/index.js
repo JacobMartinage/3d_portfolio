@@ -26,7 +26,7 @@ import swift from "./tech/swift.png";
 
 import question from "./company/question.jpg";
 
-import carrent from "./carrent.png";
+import envoLogo2 from "./envoLogo2.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
@@ -49,7 +49,7 @@ export {
   tailwind,
   threejs,
   question,
-  carrent,
+  envoLogo2,
   jobit,
   tripguide,
   java,
