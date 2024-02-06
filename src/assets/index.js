@@ -27,6 +27,7 @@ import swift from "./tech/swift.png";
 import question from "./company/question.jpg";
 
 import envoLogo2 from "./envoLogo2.png";
+import YTSummarizer from "./YTSummarizer.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
@@ -50,7 +51,7 @@ export {
   threejs,
   question,
   envoLogo2,
-  jobit,
+  YTSummarizer,
   tripguide,
   java,
   python,
