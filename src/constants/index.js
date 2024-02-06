@@ -11,14 +11,13 @@ import {
     git,
     figma,
     question,
-    carrent,
-    jobit,
-    tripguide,
     threejs,
     swift,
     java,
     python,
     YTSummarizer,
+    envoLogo2,
+    Portfolio
   } from "../assets";
   
   export const navLinks = [
@@ -169,7 +168,7 @@ import {
           },
         ],
       
-        image: tripguide,
+        image: Portfolio,
         source_code_link: "https://github.com/JacobMartinage/3d_portfolio",
       },
       {

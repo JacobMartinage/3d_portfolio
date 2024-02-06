@@ -13,7 +13,7 @@ const Tech = () => {
     <div className='w-full flex justify-center'>
           <motion.p
             variants = {fadeIn("", "", 0.1, 1)}
-            className='mt-4 text-secondary text-[17px] flex justify-center'
+            className='mt-4 text-secondary text-[17px] flex justify-center unselectable'
             >
             Below are languages, frameworks, libraries, and other technologies I have experience with through my coursework or personal projects.
           </motion.p>
