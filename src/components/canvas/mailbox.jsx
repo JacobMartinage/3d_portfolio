@@ -34,7 +34,7 @@ const Mailbox = () => {
   const MailboxCanvas = () => {
     return (
       <Canvas
-        frameLoop = "on demand"
+        frameloop = "on demand"
         shadows
         camera= {{position: [0,-4, 0], fov: 16, rotateX: -Math.PI/8, rotateY: Math.PI/2.25 }}
       >
