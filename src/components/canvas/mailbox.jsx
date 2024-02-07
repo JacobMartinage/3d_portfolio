@@ -1,13 +1,20 @@
-import { Suspense, useEffect, useState} from 'react';
-import { Canvas } from '@react-three/fiber';
+import { Suspense, useEffect, useState, useRef} from 'react';
+import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 
 import CanvasLoader from '../Loader';
 
 const Mailbox = () => {
+    const ref = useRef();
+    
+    useFrame((state, delta) => {
+      ref.current.rotation.y -= delta * 0.75;
+      
+    })  
+
     const Mailbox = useGLTF('src/assets/Mailbox.glb')
     return (
-      <mesh rotation={[0, 0, 0]}>
+      <mesh ref={ref} rotation={[0, 0, 0]}>
         <hemisphereLight intensity={4.5}
         groundColor="black"/>
         <pointLight
@@ -34,7 +41,7 @@ const Mailbox = () => {
   const MailboxCanvas = () => {
     return (
       <Canvas
-        frameloop = "on demand"
+        frameloop = "always"
         shadows
         camera= {{position: [0,-4, 0], fov: 16, rotateX: -Math.PI/8, rotateY: Math.PI/2.25 }}
       >
