@@ -34,12 +34,12 @@ const Contact = () => {
     setLoading(true);
     emailjs.send(
     'service_2vxcnum', 
-    'template_9ypvjn1',
+    'template_srn9ref',
     {
       from_name: form.name,
       to_name: 'Jacob',
       from_email: form.email,
-      to_email: 'jacobmartinage@gmail.com',
+      to_email: 'me@jacobmartinage.com',
       message: form.message,
     },
     'YkNmtMMqXxvYoOTBV'

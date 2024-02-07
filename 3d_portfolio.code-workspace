@@ -1,9 +1,11 @@
 {
 	"folders": [
 		{
+			"name": "3d_portfolio",
 			"path": "."
 		},
 		{
+			"name": "public",
 			"path": "../../Downloads/public"
 		}
 	],
