@@ -7,9 +7,9 @@ import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 import CanvasLoader from '../Loader';
 
 const Computers = ( { isMobile } ) => {
-  const computer = useGLTF('./heroModel.glb')
+  const computer = useGLTF('./heroModel8.glb')
   return (
-    <mesh rotation={[0, -Math.PI/1.5, 0]}>
+    <mesh rotation={[0, -.30, 0]}>
       <hemisphereLight intensity={1.8}
       groundColor="black"/>
       <pointLight
@@ -25,8 +25,8 @@ const Computers = ( { isMobile } ) => {
       />
       <primitive
         object={computer.scene}
-        scale = {isMobile ? 0.75 : 1.1}
-        position={isMobile ? [0,-3.25,-3.5] : [0,-4.25,-3.5]}
+        scale = {isMobile ? 0.9 : 1.3}
+        position={isMobile ? [0,-1.25,0] : [0, -2.1, 0]}
         
         />
     </mesh>
@@ -55,12 +55,14 @@ const ComputersCanvas = () => {
     <Canvas
       frameloop = "demand"
       shadows
-      camera= {{ position: [20,3, 5], fov: 35}}
-      gl = {{ preserveDrawingBufferf: true}}
+      camera= {{ position: [1,-8, -2], fov: 40}}
+      gl = {{ preserveDrawingBuffer: true}}
+  
     >
       <Suspense fallback={ <CanvasLoader/>}>
         <OrbitControls 
           enableZoom={false}
+          enablePan={false}
           maxPolarAngle={Math.PI /2 }
           minPolarAngle={Math.PI / 2}
         />

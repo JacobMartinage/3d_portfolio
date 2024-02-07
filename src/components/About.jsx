@@ -44,7 +44,7 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className = {styles.sectionSubText}>What I do</p>
-        <h2 className='flex text-[100px] font-semibold mt-2'><span className='blue-to-pink-gradient'>Introduction</span></h2>
+        <h2 className={styles.sectionHeadText}><span className='blue-to-pink-gradient'>Introduction</span></h2>
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
