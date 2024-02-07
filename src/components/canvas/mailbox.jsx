@@ -12,7 +12,7 @@ const Mailbox = () => {
       
     })  
 
-    const Mailbox = useGLTF('src/assets/Mailbox.glb')
+    const Mailbox = useGLTF('./mailbox/Mailbox.glb')
     return (
       <mesh ref={ref} rotation={[0, 0, 0]}>
         <hemisphereLight intensity={4.5}

@@ -6,7 +6,7 @@ import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 import CanvasLoader from '../Loader';
 
 const Computers = ( { isMobile } ) => {
-  const computer = useGLTF('src/assets/heroModel.glb')
+  const computer = useGLTF('./tv/heroModel.glb')
   return (
     <mesh rotation={[0, -Math.PI/1.5, 0]}>
       <hemisphereLight intensity={1.8}
