@@ -112,10 +112,7 @@ import {
       date: "Summer 2024",
       points: [
         "As a Freshman in CS, I have little to no previous professional experience, but I am hoping to begin my professional CS career with an internship this summer",
-        "I have been searching for and applying to numerous internships in the hopes of gaining valuable experience and knowledge",
-        "In the hopes of getting a head start on my career, I have been working on  projects and learning new technologies and languages while working on coursework and applying for intern positions",
-        "To any hiring managers reading this, I am a hardworking and dedicated individual who is eager to learn and contribute to any team, and you will not regret bringing me on board!",
-        "Hopefully, this space will get filled with a company soon!",        
+        "To any hiring managers reading this, I am a hardworking and dedicated individual who is eager to learn and contribute to any team, and you will not regret bringing me on board!",       
       ],
     },
     
@@ -127,7 +124,7 @@ import {
     {
         name: "My Personal Portfolio",
         description:
-          "My personal portfolio website, built primarily with React and Tailwind CSS. It is a responsive, single-page application that showcases my skills, projects, and experiences.I also utilized Three.js to incorporate custom 3D models that I made throughout the website, making it feel almost alive. I'm really proud of the final product!",
+          "This website! I built this site primarily with React and Tailwind CSS. It is a responsive, single-page application that utilizes Three.js to incorporate custom 3D models that I made throughout the website, showcasing my skills and projects. I'm really proud of how it turned out!",
         tags: [
           {
             name: "React",
@@ -152,7 +149,7 @@ import {
         "Envo is a chatbot/web app I helped to develop at VTHacksX that used a ML model to predict the carbon footprint of current, future, and hypothetical cars based on various parameters, and would return its confidence in this answer. Placed third in the Environmental Machine Learning category at VTHacksX!",
       tags: [
         {
-          name: "python",
+          name: "Python",
           color: "blue-text-gradient",
         },
         {
