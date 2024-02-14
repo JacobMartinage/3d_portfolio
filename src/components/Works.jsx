@@ -65,7 +65,7 @@ const Works = () => {
             variants = {fadeIn("", "", 0.1, 1)}
             className='mt-4 text-secondary text-[17px] max-w-3x1 leading-[30px]'
             >
-            Here are some of the projects I have worked on.
+            Here are some of the projects I have worked on, click on the github icon to view the source code!
           </motion.p>
 
       </div>
