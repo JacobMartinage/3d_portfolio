@@ -21,6 +21,7 @@ import threejs from "./tech/threejs.svg";
 import python from "./tech/python.png";
 import java from "./tech/java.png";
 import swift from "./tech/swift.png";
+import vt from "./vt.png";
 
 //companies
 import question from "./company/question.jpg";
@@ -55,4 +56,5 @@ export {
   java,
   python,
   swift,
+  vt,
 };
