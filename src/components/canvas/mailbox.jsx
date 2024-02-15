@@ -1,4 +1,4 @@
-import { Suspense, useEffect, useState, useRef} from 'react';
+import { Suspense, useRef} from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 
@@ -7,7 +7,7 @@ import CanvasLoader from '../Loader';
 const Mailbox = () => {
     const ref = useRef();
     
-    useFrame((state, delta) => {
+    useFrame((delta) => {
       ref.current.rotation.y -= delta * 0.75;
       
     })  

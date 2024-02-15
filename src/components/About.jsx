@@ -8,8 +8,6 @@ import { fadeIn, textVariant } from '../utils/motion';
 
 import { SectionWrapper } from '../hoc';
 
-import { TrackCanvas } from './canvas';
-
 const ServiceCard = ({index, title, icon}) => {
   return (
     <Tilt className= "xs:w-[250px] w-full">
