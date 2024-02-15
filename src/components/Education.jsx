@@ -11,7 +11,7 @@ import { SectionWrapper } from '../hoc';
 
 const EducationCard = ({index, title, icon, description, gpa, date}) => {
     return (
-      <Tilt className= "w-[80%]">
+      <div className= "w-[80%]">
         <motion.div
         variants={fadeIn("right", "spring", 0.65 * index, 1.5)}
         className = "w-full blue-pink-gradient p-[1px] rounded-[20px] shadow-card"
@@ -49,7 +49,7 @@ const EducationCard = ({index, title, icon, description, gpa, date}) => {
           </div>
   
         </motion.div>
-      </Tilt>
+      </div>
   
     )
   }
