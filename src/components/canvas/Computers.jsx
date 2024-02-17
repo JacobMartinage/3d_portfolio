@@ -23,19 +23,8 @@ const Computers = ( { isMobile } ) => {
         castShadow
         shadow-mapSize={1024}
       />
-      <mesh position={[0.525, -0.1, -.25]} rotation={[0,Math.PI,0]}> {/* Adjust position within screen */}
-                <planeGeometry args={[3.45, 3.2]} /> {/* Adjust size to fit screen */}
-                <Html 
-                    transform 
-                    occlude 
-                    scale={[0.45,0.78,1]}
-                    position={[0,0,0.125]}
-                    style = {{ width: '100%', height: '100%', objectFit: 'contain' }}
-                    className= "unselectable"
-                >
-                  <iframe src="src\2d.html" style={{ width: '100%', height: '100%' }} className='unselectable'/>
-                </Html>
-      </mesh>
+      
+      
       <primitive
         object={computer.scene}
         scale = {isMobile ? 0.9 : 1.3}
@@ -45,6 +34,20 @@ const Computers = ( { isMobile } ) => {
     </mesh>
   )
 }
+
+// { <mesh position={[0.525, -0.1, -.25]} rotation={[0,Math.PI,0]}> {/* Adjust position within screen */}
+//                 <planeGeometry args={[3.45, 3.2]} /> {/* Adjust size to fit screen */}
+//                 <Html 
+//                     transform 
+//                     occlude 
+//                     scale={[0.45,0.78,1]}
+//                     position={[0,0,0.125]}
+//                     style = {{ width: '100%', height: '100%', objectFit: 'contain' }}
+//                     className= "unselectable"
+//                 >
+//                   <iframe src="src\2d.html" style={{ width: '100%', height: '100%' }} className='unselectable'/>
+//                 </Html>
+//       </mesh> } 
 
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
