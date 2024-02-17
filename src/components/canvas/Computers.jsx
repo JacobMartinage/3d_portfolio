@@ -33,7 +33,7 @@ const Computers = ( { isMobile } ) => {
                     style = {{ width: '100%', height: '100%', objectFit: 'contain' }}
                     className= "unselectable"
                 >
-                  <iframe src="src\2d-site\index.html" style={{ width: '100%', height: '100%' }} className='unselectable'/>
+                  <iframe src="src\2d.html" style={{ width: '100%', height: '100%' }} className='unselectable'/>
                 </Html>
       </mesh>
       <primitive
