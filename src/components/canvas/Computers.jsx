@@ -23,7 +23,7 @@ const Computers = ( { isMobile } ) => {
         castShadow
         shadow-mapSize={1024}
       />
-      <mesh position={[0.525, -0.1, -.675]} rotation={[0,Math.PI,0]}> {/* Adjust position within screen */}
+      <mesh position={[0.525, -0.1, -.25]} rotation={[0,Math.PI,0]}> {/* Adjust position within screen */}
                 <planeGeometry args={[3.45, 3.2]} /> {/* Adjust size to fit screen */}
                 <Html 
                     transform 
