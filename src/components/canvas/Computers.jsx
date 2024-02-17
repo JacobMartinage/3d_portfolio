@@ -1,6 +1,6 @@
 import { Suspense, useEffect, useState} from 'react';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
+import { OrbitControls, Preload, useGLTF, Html } from '@react-three/drei';
 
 
 
@@ -23,6 +23,19 @@ const Computers = ( { isMobile } ) => {
         castShadow
         shadow-mapSize={1024}
       />
+      <mesh position={[0.525, -0.1, -.675]} rotation={[0,Math.PI,0]}> {/* Adjust position within screen */}
+                <planeGeometry args={[3.45, 3.2]} /> {/* Adjust size to fit screen */}
+                <Html 
+                    transform 
+                    occlude 
+                    scale={[0.45,0.78,1]}
+                    position={[0,0,0.125]}
+                    style = {{ width: '100%', height: '100%', objectFit: 'contain' }}
+                    className= "unselectable"
+                >
+                  <iframe src="src\2d-site\index.html" style={{ width: '100%', height: '100%' }} className='unselectable'/>
+                </Html>
+      </mesh>
       <primitive
         object={computer.scene}
         scale = {isMobile ? 0.9 : 1.3}
@@ -55,7 +68,7 @@ const ComputersCanvas = () => {
     <Canvas
       frameloop = "demand"
       shadows
-      camera= {{ position: [1,-8, -2], fov: 40}}
+      camera= {{ position: [.3,-8, -2], fov: 40}}
       gl = {{ preserveDrawingBuffer: true}}
   
     >
