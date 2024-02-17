@@ -56,7 +56,7 @@ import {
     {
       title: "Virginia Tech",
       icon: vt,
-      description: "I am currently a Freshman at Virginia Tech, majoring in Computer Science. I am a member of BOLT @ VT (Battery Operated Land Transport) an electric motorcycle design team, working on wheelie control for a custom electric dirtbike. I am also a member of a research lab @ VT called the Prime Lab, working on a HCI project for integrating AI into education and helping professors better understand their students learning and progress.",
+      description: "I am currently a Freshman at Virginia Tech, majoring in Computer Science. I am a member of BOLT @ VT (Battery Operated Land Transport) an electric motorcycle design team, working on wheelie control for a custom electric dirtbike. I have also recently joined a research lab @ VT called the Prime Lab, working on a HCI project for integrating AI into education and helping professors better understand their students learning progression.",
       gpa: "GPA: 3.7",
       date: "Expected Graduation: May/2026",
         
