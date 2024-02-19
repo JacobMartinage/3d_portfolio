@@ -18,6 +18,8 @@ const styles = {
       top: 0, 
       zIndex: 10     // Ensure it stays on top 
     }
+
+    
   };
   
   export { styles };

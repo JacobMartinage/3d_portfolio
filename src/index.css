@@ -19,6 +19,21 @@
   display: block;
 }
 
+.fade-in {
+  opacity: 0;   /* Start with the navbar hidden */
+  transition: opacity 0.5s ease-in; /* Adjust the duration as needed */
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  0% { 
+    opacity: 0; 
+  }
+  100% { 
+    opacity: 1; 
+  }
+}
+
 .unselectable {
   -moz-user-select: -moz-none;
   -khtml-user-select: none;

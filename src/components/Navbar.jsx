@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import {Link} from 'react-router-dom'
-
+import '../index.css'; 
 import {styles} from '../styles';
 import {navLinks} from '../constants';
 import { logo, menu, close} from '../assets';
@@ -11,12 +11,16 @@ const Navbar = () => {
 
   const [isSticky, setIsSticky] = useState(false);
 
+  const [fadeOut, setFadeOut] = useState(false);
+
   const handleScroll = () => {
     const offset = window.scrollY;
     if (offset > 800) { // Adjust this threshold as needed
       setIsSticky(true);
-    } else {
-      setIsSticky(false);
+
+    } 
+    else {
+      setIsSticky(false);    
     }
   };
 
@@ -25,7 +29,7 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
   return (
-    <nav className={` ${styles.paddingX} w-full flex items-center py-3 top-0 z-10 bg-primary ${isSticky ? 'fixed' : ''}`}>
+    <nav className={` ${styles.paddingX} w-full flex items-center py-3 top-0 z-10 bg-primary ${isSticky ? 'fixed fade-in' : ''} ${fadeOut ? 'fixed fade-out' : ''}`}>
       <div className = "w-full flex justify-between items-center max-w-7 mx-auto">
         <Link 
         to = "/" 
