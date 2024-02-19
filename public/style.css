@@ -43,7 +43,8 @@ h1 {
   p {
     font-family: "Sixtyfour", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: 340;
     font-style: normal;
     font-variation-settings:
         "BLED" 0,
@@ -64,6 +65,8 @@ h1 {
     -webkit-text-fill-color: transparent;
     margin-top: 2px;                  
     text-align: center; 
+    margin-left: 1px;
+    margin-right: 1px;
 
   }
 .static-effect {
