@@ -1,4 +1,4 @@
-import { Suspense, useRef} from 'react';
+import { Suspense, useRef, useEffect, useState} from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 
@@ -7,19 +7,20 @@ import CanvasLoader from '../Loader';
 const Mailbox = () => {
     const ref = useRef();
     
-    useFrame((delta) => {
+    useFrame((state, delta) => {
       ref.current.rotation.y -= delta * 0.75;
       
     })  
 
     const Mailbox = useGLTF('./Mailbox.glb')
+    console.log(Mailbox)
     return (
       <mesh ref={ref} rotation={[0, 0, 0]}>
         <hemisphereLight intensity={4.5}
         groundColor="black"/>
         <pointLight
         position={[-1,1,1]} 
-        intensity={10}/>
+        intensity={8}/>
         <spotLight
           position={[-20,50,10]}
           angle ={0.12}
@@ -30,7 +31,7 @@ const Mailbox = () => {
         />
         <primitive
           object={Mailbox.scene}
-          position= {[0,-.5,0]}
+          position= {[0,-0.5,0]}
           
           />
       </mesh>
@@ -40,6 +41,7 @@ const Mailbox = () => {
   
   const MailboxCanvas = () => {
     return (
+      
       <Canvas
         frameloop = "always"
         shadows
@@ -48,8 +50,10 @@ const Mailbox = () => {
         <Suspense fallback={ <CanvasLoader/>}>
           
         <Mailbox/>
+        
         </Suspense>
         <OrbitControls 
+            
             enableZoom={false}
             enablePan={false}
             maxPolarAngle={Math.PI/2}
