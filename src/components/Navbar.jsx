@@ -13,7 +13,7 @@ const Navbar = () => {
 
   const handleScroll = () => {
     const offset = window.scrollY;
-    if (offset > 200) { // Adjust this threshold as needed
+    if (offset > 800) { // Adjust this threshold as needed
       setIsSticky(true);
     } else {
       setIsSticky(false);
@@ -25,7 +25,7 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
   return (
-    <nav className={` ${styles.paddingX} w-full flex items-center py-5 top-0 z-10 bg-primary ${isSticky ? 'fixed' : ''}`}>
+    <nav className={` ${styles.paddingX} w-full flex items-center py-3 top-0 z-10 bg-primary ${isSticky ? 'fixed' : ''}`}>
       <div className = "w-full flex justify-between items-center max-w-7 mx-auto">
         <Link 
         to = "/" 
