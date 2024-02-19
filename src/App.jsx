@@ -15,7 +15,7 @@ const App = ()  => {
         </div>
         <div>
         
-        <About />
+        {/*<About />*/} 
         <Tech />
         <Experience />
         
@@ -27,7 +27,7 @@ const App = ()  => {
         
 
       </div>
-
+      
       </BrowserRouter>
 
 

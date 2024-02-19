@@ -8,11 +8,24 @@ import { logo, menu, close} from '../assets';
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
+
+  const [isSticky, setIsSticky] = useState(false);
+
+  const handleScroll = () => {
+    const offset = window.scrollY;
+    if (offset > 200) { // Adjust this threshold as needed
+      setIsSticky(true);
+    } else {
+      setIsSticky(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   return (
-    <nav 
-      className= {` ${styles.paddingX} w-full flex items-center py-5 top-0 z-20 bg-primary`}
- 
-    >
+    <nav className={` ${styles.paddingX} w-full flex items-center py-5 top-0 z-10 bg-primary ${isSticky ? 'fixed' : ''}`}>
       <div className = "w-full flex justify-between items-center max-w-7 mx-auto">
         <Link 
         to = "/" 
