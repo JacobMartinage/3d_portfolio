@@ -24,17 +24,25 @@ const Computers = ( { isMobile } ) => {
         shadow-mapSize={1024}
       />
       <mesh position={[0.54, -0.1, -.64]} rotation={[0,Math.PI,0]}> {/* Adjust position within screen */}
-                <planeGeometry args={[3.5, 3.2]} /> {/* Adjust size to fit screen */}
-                <Html 
-                    transform 
-                    occlude 
-                    scale={[0.45,0.78,1]}
-                    position={[0,0,0.125]}
-                    style = {{ width: '100%', height: '100%', objectFit: 'contain' }}
-                    className= "unselectable"
-                >
-                  <iframe src="./2d.html" style={{ width: '100%', height: '100%' }} className='unselectable'/>
-                </Html>
+      <planeGeometry args={[1.2, 0.8]} /> {/* Reduced plane size */}
+        <Html
+          transform
+          occlude
+          // Scale reduced to fit the smaller plane and video
+          scale={isMobile ? [0.22, 0.39, 1] : [0.101, 0.101, 1]} 
+          position={[0, -0.155, 0.125]}
+          style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+          className="unselectable"
+        >
+          <video
+            src="/tvVideo.mp4"
+            autoPlay
+            muted
+             
+            style={{ width: "100%", height: "100%", objectFit: "cover" }} 
+          />
+        </Html>
+      
       </mesh>
       <primitive
         object={computer.scene}
