@@ -25,11 +25,13 @@ import vt from "./vt.png";
 
 //companies
 import question from "./company/question.jpg";
+import ga1 from './company/GALogo.png';
+import ga2 from './company/GA-CCRI.jpg';
 
 //projects
 import envoLogo2 from "./envoLogo2.png";
-import YTSummarizer from "./YTSummarizer.png";
-import Portfolio from "./Portfolio.png";
+import YTSummarizer from "./YTSummarizer.jpg";
+import Portfolio from "./Portfolio.jpg";
 
 export {
   logo,
@@ -57,4 +59,6 @@ export {
   python,
   swift,
   vt,
+  ga1,
+  ga2,
 };

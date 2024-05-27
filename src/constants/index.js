@@ -19,6 +19,8 @@ import {
     envoLogo2,
     Portfolio,
     vt,
+    ga1,
+    ga2,
   } from "../assets";
   
   export const navLinks = [
@@ -129,16 +131,28 @@ import {
   
   const experiences = [
     {
-      title: "Currently searching for a Summer 2024 Internship",
-      company_name: "Anywhere, looking for Web Dev/SWE roles",
-      icon: question,
+      title: "Researcher",
+      company_name: "Virginia Tech",
+      icon: vt,
       iconBg: "#383E56",
-      date: "Summer 2024",
+      date: "Jan 2024-Present",
       points: [
-        "As a Freshman in CS, I have little to no previous professional experience, but I am hoping to begin my professional CS career with an internship this summer",
-        "To any hiring managers reading this, I am a hardworking and dedicated individual who is eager to learn and contribute to any team, and you will not regret bringing me on board!",       
+        "Research assistant on HCI (Human Computer Integration) project for the integration of AI LLMs into higher education",
+        "Developed web application with a task information panel, a coding interface, and a chat connected to a custom ChatGPT agent, designed for use in introductory coding classes",
+        "Built PostgreSQL database and connected it to Amazon AWS, which collected keystroke, mouse data, and questions/responses to/from the built-in AI assistant",       
       ],
     },
+    {
+      title: "Backend Software Engineering Intern",
+      company_name: "General Atomics CCRI",
+      icon: ga1, 
+      iconBg: "#13306C", 
+      date: "June 2024 - August 2024",
+      points: [
+          "Upcoming internship focused on backend software engineering at General Atomics CCRI." 
+         
+      ],
+  },
     
   ];
   
