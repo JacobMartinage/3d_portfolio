@@ -30,7 +30,7 @@ const Computers = ( { isMobile } ) => {
           occlude
           // Scale reduced to fit the smaller plane and video
           scale={isMobile ? [0.22, 0.39, 1] : [0.101, 0.101, 1]} 
-          position={[0, -0.155, 0.125]}
+          position={[0, -0.125, 0.125]}
           style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
           className="unselectable"
         >
