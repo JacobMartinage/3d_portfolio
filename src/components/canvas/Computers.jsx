@@ -29,23 +29,23 @@ const Computers = ( { isMobile } ) => {
           transform
           occlude
           // Scale reduced to fit the smaller plane and video
-          scale={[0.125, 0.155, 1]} 
-          position={[0.97, 0.2, 0.115]}
-          style={{ width: '78%', height: '100%', objectFit: 'cover' }} 
+          scale={[0.11, 0.14, 1]} 
+          position={[0.4, -0.07, 0.115]}
+          // style={{ width: '78%', height: '100%', objectFit: 'cover' }} 
           className="unselectable"
         >
           <video
             src="/tvStartup4.mp4"
             autoPlay
             muted
-            style={{ width: "80%", height: "120%", objectFit: "cover" }} 
+            style={{ width: "82%", height: "100%", objectFit: "cover" }} 
           />
         </Html>
       
       </mesh>
       <primitive
         object={computer.scene}
-        scale = {isMobile ? 0.9 : 1.3}
+        scale = {isMobile ? 0.9 : 1.2}
         position={isMobile ? [0,-1.25,0] : [0, -2., 0]}
         
         />
