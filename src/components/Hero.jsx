@@ -8,18 +8,18 @@ const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto flex flex-col items-center justify-top mt-3">
       <div className={`${styles.paddingX} mx-auto flex items-start gap-5 mb-1`}>
-        <div className="flex flex-col justify-center items-center mt-2">
+        {/* <div className="flex flex-col justify-center items-center mt-2">
           <div className='w-5 h-5 rounded-full bg-[#915eff]'/>
           <div className="w-1 sm:h-20 h-10 violet-gradient"/>
-        </div>
+        </div> */}
 
-        <div className='flex justify-left items-center'>
+        {/* <div className='flex justify-left items-center'>
           <h1 className={`${styles.heroHeadText} text-white`}>
              Hi, I'm <span className="blue-to-purple-gradient">Jacob</span></h1>
-        </div>
+        </div> */}
       </div>
 
-      <div className="w-full h-[700px]">
+      <div className="w-full h-[95vh]">
         <ComputersCanvas />
         <div className="absolute bottom-20 rounded-3 w-full flex justify-center items-center mb-10">
         <a href="#tech">
